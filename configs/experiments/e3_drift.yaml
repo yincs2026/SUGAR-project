@@ -1,0 +1,8 @@
+experiment: e3
+dataset: beauty
+fraction: 0.10
+drift_ratio: 0.8
+tau_grid: [0.2, 0.3, 0.4, 0.5, 0.6]   # 5-point cost-quality sweep
+# detector metrics (P/R/F1, delay, false alarms) are computed by
+# rerunning run_offline.py --phase m2m3 on the _drift dataset and comparing
+# the fired revisions against drift_labels.pkl (analysis notebook E3)

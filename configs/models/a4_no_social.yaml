@@ -1,0 +1,4 @@
+# A4: no social signal (M4 removed; neighbor_map not injected)
+inherits: base
+model:
+  mode: full

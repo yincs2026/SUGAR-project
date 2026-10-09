@@ -1,0 +1,15 @@
+# E1 main comparison -- run via CLI, this file documents the grid
+# Baselines (reproduced under the identical protocol):
+#   python scripts/train_baseline.py --model gru4rec   --dataset {beauty|yelp_filtered} --tag gru4rec_{ds}
+#   python scripts/train_baseline.py --model sasrec    --dataset {ds} --tag sasrec_{ds}
+#   python scripts/train_baseline.py --model bert4rec  --dataset {ds} --tag bert4rec_{ds}
+#   python scripts/train_baseline.py --model unisrec   --dataset {ds} --tag unisrec_{ds}
+# SUGAR:
+#   python scripts/train.py --model sugar --dataset {ds} --tag sugar_{ds}
+#   seeds 42/43/44 for sugar and sasrec rows (std reported)
+# Cited from original papers (marked with dagger in the paper):
+#   IDGenRec, KCGN (Yelp) -- sampled-metrics footnote required
+experiment: e1
+datasets: [beauty, yelp_filtered]
+seeds: [42, 43, 44]
+seed_models: [sugar, sasrec]

@@ -1,0 +1,5 @@
+# A3: constant fusion weight (rho and content gate disabled) -- the paper's
+# central ablation: does uncertainty-gating actually matter?
+inherits: base
+model:
+  mode: fixed_gate

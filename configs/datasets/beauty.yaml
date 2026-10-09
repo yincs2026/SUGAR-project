@@ -1,0 +1,9 @@
+name: beauty
+raw_files:
+  reviews: data/raw/reviews_Beauty_5.json.gz
+  business: null         
+format: amazon
+min_interactions: 5     
+min_item_interactions: 5
+social: false           
+max_seq_len: 50

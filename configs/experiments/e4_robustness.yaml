@@ -1,0 +1,6 @@
+experiment: e4
+dataset: beauty
+poison_ps: [0.2, 0.4, 0.6, 0.8]
+lags: [0, 1, 5, 20, 50]
+eval_models: [sugar, a3_fixed_gate]   # the gap between these two curves
+                                      # proves the uncertainty-gating claim

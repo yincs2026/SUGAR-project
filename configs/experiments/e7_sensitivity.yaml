@@ -1,0 +1,5 @@
+experiment: e7
+dataset: beauty
+grid:
+  offline.window_size_k: [5, 10, 20]
+  model.lambda_align: [0, 0.01, 0.1]

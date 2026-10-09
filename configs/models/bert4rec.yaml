@@ -1,0 +1,8 @@
+# fully trained MLM setup (not the known-underfit RecBole defaults)
+inherits: base
+model:
+  family: mlm
+  d: 64
+  n_blocks: 2
+  n_heads: 2
+  dropout: 0.2

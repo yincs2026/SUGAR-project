@@ -1,0 +1,4 @@
+# A1: no semantic profile; sequence-only (SASRec backbone + snapshot protocol)
+inherits: base
+model:
+  mode: no_profile

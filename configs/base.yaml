@@ -1,0 +1,56 @@
+seed: 42
+device: cuda         
+
+data:
+  dataset: beauty     # beauty | yelp_filtered
+  raw_dir: data/raw
+  processed_dir: outputs/processed
+  min_interactions: 5 
+
+evaluation:
+  cutoffs: [5, 10, 20]
+  metrics: [HR, NDCG, MRR]
+  full_ranking: true
+  test_protocol: leave_one_out_temporal
+
+llm:
+  model_name: Qwen/Qwen3-0.6B
+  decoding: greedy
+  max_new_tokens: 512
+  cache_dir: outputs/cache
+
+encoder:
+  model_name: BAAI/bge-m3
+  dim: 1024
+  cache_dir: outputs/cache
+
+offline:
+  window_size_k: 10
+  checkpoint_interval_mchk: 10
+  edit_batch_medit: 5
+  min_profile_n0: 5
+  cooldown_nmin: 20
+  commit_lag_lambda: 5
+  threshold_tau: 0.3
+
+model:
+  d: 64               
+  de: 1024            
+  n_blocks: 2
+  n_heads: 2
+  dropout: 0.2
+  max_len: 50
+  n_negatives: 4     
+  lambda_align: 0.1
+  tau_align: 0.2
+  kappa: 10
+  n_social_neighbors_L: 10
+
+training:
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0
+  epochs: 200
+  patience: 10        # early stop
+  log_dir: outputs/logs
+  checkpoint_dir: outputs/checkpoints

@@ -1,0 +1,7 @@
+# A2: profiles built but never revised (M3 disabled in the OFFLINE stage).
+# Requires a snapshot store built with: run_offline.py --phase m2m3 --no_drift
+inherits: base
+model:
+  mode: full
+offline:
+  enable_drift: false

@@ -1,0 +1,9 @@
+name: yelp_filtered
+raw_files:
+  reviews: data/raw/yelp_academic_dataset_review.json
+  business: data/raw/yelp_academic_dataset_business.json
+format: yelp
+min_interactions: 5      
+min_item_interactions: 5
+social: true             
+max_seq_len: 50

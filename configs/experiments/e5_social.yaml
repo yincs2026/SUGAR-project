@@ -1,0 +1,4 @@
+experiment: e5
+dataset: yelp_filtered     # real social graph only exists on Yelp
+modes: [real, random, co_interaction]
+co_interaction_threshold: 3

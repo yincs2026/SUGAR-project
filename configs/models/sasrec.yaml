@@ -1,0 +1,7 @@
+# full-catalog CE per Petrov & Macdonald 2023 (avoids BCE underfit)
+inherits: base
+model:
+  family: ce
+  d: 64
+  n_blocks: 2
+  n_heads: 2

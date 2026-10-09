@@ -1,0 +1,8 @@
+# text-enhanced SASRec variant following the UniSRec idea
+inherits: base
+model:
+  family: ce
+  d: 64
+  n_blocks: 2
+  n_heads: 2
+  de: 1024
