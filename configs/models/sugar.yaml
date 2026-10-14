@@ -1,4 +1,0 @@
-# A0: full SUGAR -- inherits base.yaml, no overrides needed beyond defaults
-inherits: base
-model:
-  mode: full

@@ -1,3 +1,0 @@
-experiment: e2
-dataset: beauty            # full grid on Beauty; Yelp subset via CLI
-variants: [a1, a2, a3, a4]

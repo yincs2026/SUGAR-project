@@ -1,5 +1,0 @@
-inherits: base
-model:
-  family: bce
-  d: 64
-  n_negatives: 4
