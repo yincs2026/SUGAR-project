@@ -1,0 +1,104 @@
+{
+  "version": "0.3.0",
+  "date": "2026-10-14",
+  "unit_tests": {
+    "passed": 78,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 5.469,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "packages": {
+      "torch": "2.3.1+cpu",
+      "numpy": "1.26.4",
+      "transformers": "4.45.2",
+      "PyYAML": "6.0.3",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "peft": "0.13.2",
+      "accelerate": "0.34.2"
+    }
+  },
+  "device": "cpu",
+  "full_synthetic_suite": {
+    "status": "completed",
+    "main_models": [
+      "sasrec",
+      "sugar",
+      "gru4rec",
+      "caser",
+      "bert4rec",
+      "lm-feature",
+      "socialmf",
+      "lightgcn-plus",
+      "rlmrec",
+      "llara"
+    ],
+    "seeds": [
+      42,
+      43
+    ],
+    "trained_checkpoints": 47,
+    "completed_main_variant_sweep_tasks": 40,
+    "all_results_marked_mock": true,
+    "paper_numbers_reproduced": false,
+    "covers": [
+      "all ten local models",
+      "nine ablations/variants",
+      "validation-only fixed-fusion selection",
+      "SUGAR/fixed/SASRec stress comparisons",
+      "proxy graph",
+      "latency scopes",
+      "lag sweep",
+      "encoder ARI",
+      "pooled drift analysis",
+      "seed aggregation",
+      "paired testing"
+    ]
+  },
+  "transformers_peft_test": {
+    "passed": true,
+    "model": "random tiny Qwen2 architecture, not a pretrained 7B model",
+    "tested": [
+      "real HF forward/backward",
+      "LoRA gradients",
+      "hybrid projector gradients",
+      "trainable-only checkpoint",
+      "full-catalog likelihood scoring"
+    ]
+  },
+  "package_wheel_build": {
+    "passed": true,
+    "file": "sugar_repro-0.2.0-py3-none-any.whl",
+    "reference_json_included": true
+  },
+  "not_executed": [
+    "Qwen2.5-7B pretrained generation",
+    "real BGE encoding",
+    "real vLLM server",
+    "real benchmark datasets",
+    "pretrained 7B LLaRA baseline",
+    "L40S training and latency",
+    "Docker build",
+    "remote GitHub Actions"
+  ],
+  "paper_numbers_reproduced": false,
+  "github_push_performed": false,
+  "numerical_verifier_rejects_missing_or_mock_data": true,
+  "added_measurements": [
+    "85/90/95 pooled drift percentile labels",
+    "module tokens/time/cache calls",
+    "backbone and augmentation parameter counts",
+    "computed Table 4-9 exports",
+    "seed completion/failure accounting",
+    "semantic inference caching",
+    "random temporally visible corruption",
+    "real-backend-only suite"
+  ],
+  "real_benchmark_execution": false,
+  "pretrained_7b_execution": false,
+  "named_entity_checkpoint_execution": false
+}

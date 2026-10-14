@@ -1,0 +1,33 @@
+{
+  "scope": "Integration fixtures only, not benchmark results",
+  "mock": true,
+  "models": [
+    "rlmrec",
+    "socialmf",
+    "llara",
+    "bert4rec",
+    "caser",
+    "gru4rec",
+    "lm-feature",
+    "sasrec",
+    "sugar",
+    "lightgcn-plus"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "checkpoints": 47,
+  "status": "completed",
+  "exports": {
+    "tables": {
+      "4": 1,
+      "5": 4,
+      "6": 5,
+      "7": 36,
+      "8": 9,
+      "9": 40
+    },
+    "note": "Computed results only. Empty tables indicate missing runs; stress details retain per-user gates and correlation."
+  }
+}

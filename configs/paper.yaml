@@ -1,0 +1,109 @@
+dataset: yelp
+core: 5
+seed: 42
+seeds: [42, 43, 44, 45, 46] # implementation choices; original seeds not supplied
+model: sugar
+max_len: 200
+dim: 64
+blocks: 2
+heads: 2
+dropout: 0.2
+batch_size: 128
+epochs: 200
+patience: 10
+lr: 0.001
+weight_decay: 0.0
+negatives: 1
+loss: bce
+alignment_weight: 0.05
+alignment_temperature: 0.1
+alignment_negatives: 64 # not specified by manuscript
+kappa: 50.0
+neighbors: 10
+social_temperature: 0.1 # initialization not specified
+fixed_fusion: null
+force_gate: null
+leaky_snapshots: false # intentional Table 7 diagnostic only when explicitly enabled
+no_social: false
+corruption_seed: 42
+no_drift: false
+single_strike: false
+recompute_score: false
+profile_embedding: weighted
+recent_decay: 0.0
+k: 20
+checkpoint: 20
+edit_size: 10
+min_profile: 5
+cooldown: 50
+lag: 10
+threshold: personalized
+xi: 1.0
+tau: 0.7 # personalized warm-up fallback; not specified
+threshold_warmup: 2 # not specified
+semantic_backend: real
+llm_model: Qwen/Qwen2.5-7B-Instruct
+llm_revision: null # must be resolved to an immutable HF commit before real preprocessing
+encoder_model: BAAI/bge-base-en-v1.5
+encoder_revision: null
+llm_url: http://127.0.0.1:8000/v1/chat/completions
+llm_server_provenance: artifacts/llm_server.json
+llm_seed: 0
+llm_max_tokens: 1024
+llm_context: 32768
+llm_timeout: 600
+encoder_batch: 64
+encoder_device: cpu
+encoder_max_len: 512
+mock_dim: 32
+mask_seen: true # manuscript does not specify repeat-item handling
+allow_fallback: true
+fallback_ner_model: en_core_web_sm
+fallback_ner_version: 3.7.1
+allow_nonpaper: false
+
+# Remaining SUGAR experiments (all disabled in the main specification).
+separate_alignment_projection: false
+neighbor_sample: null
+neighbor_sampling_seed: 42
+# Baseline-specific settings not supplied by the SUGAR manuscript.
+gru_layers: 1
+bpr_max_regularization: 1.0
+caser_len: 5
+caser_horizontal: 16
+caser_vertical: 4
+bert_mask_probability: 0.2
+graph_layers: 3
+social_regularization: 0.1
+embedding_regularization: 0.00001
+rlm_variant: contrastive
+rlm_temperature: 0.2
+rlm_alignment_weight: 0.1
+rlm_mask_ratio: 0.2
+rlm_reconstruction_power: 3
+rlm_user_embeddings: null
+rlm_item_embeddings: null
+# LLaRA full-catalog adaptation (language-model likelihood ranking).
+llara_backbone_checkpoint: null
+llara_llm_model: Qwen/Qwen2.5-7B-Instruct
+llara_llm_revision: null
+llara_backend: real
+llara_dtype: bfloat16
+llara_lora_rank: 8
+llara_lora_alpha: 16
+llara_lora_dropout: 0.05
+llara_text_epochs: 1
+llara_curriculum_epochs: 5
+llara_history_items: 20
+llara_text_tokens: 32
+llara_max_tokens: 2048
+llara_score_batch: 4
+llara_gradient_checkpointing: true
+llara_length_normalize: false
+llara_test_vocab: 64
+llara_test_hidden: 32
+
+# Exact-input cache avoids repeated M4/profile projection when the side state is unchanged.
+cache_semantic_projection: true
+semantic_cache_size: 256
+social_window: live # committed freezes M4 behavior at the own checkpoint; both policies are explicit

@@ -1,0 +1,36 @@
+cache: cache/suite-smoke
+seeds: [42, 43]
+tune_trials: 0
+models: [sasrec, sugar, gru4rec, caser, bert4rec, lm-feature, socialmf, lightgcn-plus, rlmrec, llara]
+variants: [no-drift, no-social, no-alignment, fixed-fusion, leaky-snapshots, separate-projection, sampled-neighbors, json-profile, recency-window]
+fixed_fusion_grid: [0, 0.5, 1]
+benchmark: true
+benchmark_requests: 5
+proxy_graph: true
+sweeps:
+  lag: [0, 2]
+overrides:
+  epochs: 1
+  dim: 16
+  batch_size: 32
+  max_len: 40
+  checkpoint: 5
+  k: 5
+  lag: 2
+  edit_size: 5
+  cooldown: 10
+  alignment_negatives: 4
+  dropout: 0.0
+  neighbors: 3
+  neighbor_sample: 2
+  llara_backend: tiny
+  llara_test_hidden: 16
+  llara_test_vocab: 40
+  llara_history_items: 3
+  llara_text_tokens: 4
+  llara_score_batch: 20
+  llara_max_tokens: 256
+datasets:
+  - name: yelp
+    config: configs/paper.yaml
+    demo: true

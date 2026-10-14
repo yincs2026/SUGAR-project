@@ -1,0 +1,28 @@
+research_only: true
+drift_percentiles: [85, 90, 95]
+# Run from repository root after resolving model commits and preparing the real inputs.
+cache: cache/paper-suite
+seeds: [42, 43, 44, 45, 46]
+tune_trials: 20
+models: [sasrec, sugar, gru4rec, caser, bert4rec, lm-feature, socialmf, lightgcn-plus, rlmrec, llara]
+variants: [no-drift, no-social, no-alignment, fixed-fusion, leaky-snapshots, json-profile, recency-window, separate-projection, sampled-neighbors, bpr, single-strike, live-score]
+fixed_fusion_grid: [0, 0.25, 0.5, 0.75, 1]
+benchmark: true
+benchmark_requests: 1000
+proxy_graph: true
+sweeps:
+  lag: [0, 5, 10, 20]
+  neighbors: [5, 10, 20, 50]
+  kappa: [10, 25, 50, 100]
+  tau: [0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85]
+  xi: [0.5, 1.0, 1.5, 2.0]
+datasets:
+  - name: yelp
+    config: configs/resolved-yelp.yaml
+    raw: data/raw/yelp
+  - name: douban-book
+    config: configs/resolved-douban-book.yaml
+    raw: data/raw/douban-book
+  - name: epinions
+    config: configs/resolved-epinions.yaml
+    raw: data/raw/epinions

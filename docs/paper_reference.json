@@ -1,0 +1,181 @@
+{
+  "status": "Reported manuscript numbers, NOT computed results",
+  "source": "Uploaded SUGAR.docx",
+  "table": 5,
+  "metrics": {
+    "yelp": {
+      "HR@5": 0.0405,
+      "HR@10": 0.0612,
+      "HR@20": 0.091,
+      "NDCG@10": 0.0349
+    },
+    "douban-book": {
+      "HR@5": 0.0372,
+      "HR@10": 0.0567,
+      "HR@20": 0.0851,
+      "NDCG@10": 0.0321
+    },
+    "epinions": {
+      "HR@5": 0.0393,
+      "HR@10": 0.0598,
+      "HR@20": 0.0892,
+      "NDCG@10": 0.0338
+    }
+  },
+  "manuscript_sha256": "9368eaaf232a323aecf9919fb2ab1080621409ba4c627bcfa58eac8d452be520",
+  "counts": {
+    "yelp": {
+      "users": 25433,
+      "items": 18902,
+      "interactions": 548106,
+      "social_edges": 168220
+    },
+    "douban-book": {
+      "users": 13024,
+      "items": 21897,
+      "interactions": 431748,
+      "social_edges": 42557
+    },
+    "epinions": {
+      "users": 16410,
+      "items": 24553,
+      "interactions": 510940,
+      "social_edges": 87523
+    }
+  },
+  "baselines": {
+    "yelp": {
+      "gru4rec": {
+        "HR@10": 0.0452,
+        "NDCG@10": 0.0241
+      },
+      "caser": {
+        "HR@10": 0.0431,
+        "NDCG@10": 0.0228
+      },
+      "sasrec": {
+        "HR@10": 0.0513,
+        "NDCG@10": 0.0282
+      },
+      "bert4rec": {
+        "HR@10": 0.0508,
+        "NDCG@10": 0.0279
+      },
+      "lm-feature": {
+        "HR@10": 0.0536,
+        "NDCG@10": 0.0295
+      },
+      "rlmrec": {
+        "HR@10": 0.0551,
+        "NDCG@10": 0.0304
+      },
+      "llara": {
+        "HR@10": 0.0568,
+        "NDCG@10": 0.0316
+      },
+      "lightgcn-plus": {
+        "HR@10": 0.0525,
+        "NDCG@10": 0.0287
+      },
+      "socialmf": {
+        "HR@10": 0.0489,
+        "NDCG@10": 0.0265
+      },
+      "sugar": {
+        "HR@5": 0.0405,
+        "HR@10": 0.0612,
+        "HR@20": 0.091,
+        "NDCG@10": 0.0349
+      }
+    },
+    "douban-book": {
+      "gru4rec": {
+        "HR@10": 0.0398,
+        "NDCG@10": 0.0213
+      },
+      "caser": {
+        "HR@10": 0.0375,
+        "NDCG@10": 0.0199
+      },
+      "sasrec": {
+        "HR@10": 0.0461,
+        "NDCG@10": 0.0254
+      },
+      "bert4rec": {
+        "HR@10": 0.0457,
+        "NDCG@10": 0.0251
+      },
+      "lm-feature": {
+        "HR@10": 0.0482,
+        "NDCG@10": 0.0266
+      },
+      "rlmrec": {
+        "HR@10": 0.0503,
+        "NDCG@10": 0.0279
+      },
+      "llara": {
+        "HR@10": 0.0512,
+        "NDCG@10": 0.0285
+      },
+      "lightgcn-plus": {
+        "HR@10": 0.0496,
+        "NDCG@10": 0.0274
+      },
+      "socialmf": {
+        "HR@10": 0.0441,
+        "NDCG@10": 0.0238
+      },
+      "sugar": {
+        "HR@5": 0.0372,
+        "HR@10": 0.0567,
+        "HR@20": 0.0851,
+        "NDCG@10": 0.0321
+      }
+    },
+    "epinions": {
+      "gru4rec": {
+        "HR@10": 0.0417,
+        "NDCG@10": 0.0226
+      },
+      "caser": {
+        "HR@10": 0.0396,
+        "NDCG@10": 0.0211
+      },
+      "sasrec": {
+        "HR@10": 0.0489,
+        "NDCG@10": 0.0267
+      },
+      "bert4rec": {
+        "HR@10": 0.0478,
+        "NDCG@10": 0.0262
+      },
+      "lm-feature": {
+        "HR@10": 0.0501,
+        "NDCG@10": 0.0274
+      },
+      "rlmrec": {
+        "HR@10": 0.0527,
+        "NDCG@10": 0.0289
+      },
+      "llara": {
+        "HR@10": 0.0539,
+        "NDCG@10": 0.0296
+      },
+      "lightgcn-plus": {
+        "HR@10": 0.0521,
+        "NDCG@10": 0.0285
+      },
+      "socialmf": {
+        "HR@10": 0.0466,
+        "NDCG@10": 0.0249
+      },
+      "sugar": {
+        "HR@5": 0.0393,
+        "HR@10": 0.0598,
+        "HR@20": 0.0892,
+        "NDCG@10": 0.0338
+      }
+    }
+  },
+  "baseline_seed_caveat": "Prose says some Epinions LoRA baselines averaged only converged seeds, conflicting with the five-seed main table convention."
+}

@@ -1,0 +1,107 @@
+test_cooldown_begins_at_commit (test_core.DetectorTests.test_cooldown_begins_at_commit) ... ok
+test_equality_is_not_violation (test_core.DetectorTests.test_equality_is_not_violation) ... ok
+test_recovery_resets_strikes (test_core.DetectorTests.test_recovery_resets_strikes) ... ok
+test_single_strike (test_core.DetectorTests.test_single_strike) ... ok
+test_threshold_uses_past_only (test_core.DetectorTests.test_threshold_uses_past_only) ... ok
+test_two_strikes (test_core.DetectorTests.test_two_strikes) ... ok
+test_alignment_updates_shared_projection (test_core.EquationTests.test_alignment_updates_shared_projection) ... ok
+test_bce_loss_formula (test_core.EquationTests.test_bce_loss_formula) ... ok
+test_causal_attention (test_core.EquationTests.test_causal_attention) ... ok
+test_default_profile_learns (test_core.EquationTests.test_default_profile_learns) ... ok
+test_forced_closed_is_sasrec (test_core.EquationTests.test_forced_closed_is_sasrec) ... ok
+test_invalid_semantics (test_core.EquationTests.test_invalid_semantics) ... ok
+test_js_bounds_and_symmetry (test_core.EquationTests.test_js_bounds_and_symmetry) ... ok
+test_metrics (test_core.EquationTests.test_metrics) ... ok
+test_no_neighbors_gate_zero (test_core.EquationTests.test_no_neighbors_gate_zero) ... ok
+test_no_padding_nans (test_core.EquationTests.test_no_padding_nans) ... ok
+test_real_models_require_commits (test_core.EquationTests.test_real_models_require_commits) ... ok
+test_reliability_equation (test_core.EquationTests.test_reliability_equation) ... ok
+test_topic_clustering_counts_repeats (test_core.EquationTests.test_topic_clustering_counts_repeats) ... ok
+test_trainable_social_temperature (test_core.EquationTests.test_trainable_social_temperature) ... ok
+{'users': 12, 'items': 18, 'interactions': 780, 'social_edges': 24}
+test_cache_reused (test_core.PipelineTests.test_cache_reused) ... ok
+test_chunked_ranking_consistent (test_core.PipelineTests.test_chunked_ranking_consistent) ... ok
+test_commit_at_target_excluded (test_core.PipelineTests.test_commit_at_target_excluded) ... ok
+test_core_counts (test_core.PipelineTests.test_core_counts) ... ok
+test_corrupt_source_rejected (test_core.PipelineTests.test_corrupt_source_rejected) ... ok
+test_delayed_job_does_not_revert_profile (test_core.PipelineTests.test_delayed_job_does_not_revert_profile) ... ok
+test_evidence_uses_event_indices (test_core.PipelineTests.test_evidence_uses_event_indices) ... ok
+test_frozen_artifacts_have_no_gradient (test_core.PipelineTests.test_frozen_artifacts_have_no_gradient) ... ok
+test_full_catalog_metrics (test_core.PipelineTests.test_full_catalog_metrics) ... ok
+test_leakage_ablation_is_detected (test_core.PipelineTests.test_leakage_ablation_is_detected) ... ok
+test_negative_exclusion (test_core.PipelineTests.test_negative_exclusion) ... ok
+test_neighbor_source_times (test_core.PipelineTests.test_neighbor_source_times) ... ok
+test_no_heldout_recent_behavior (test_core.PipelineTests.test_no_heldout_recent_behavior) ... ok
+test_no_profile_before_commit (test_core.PipelineTests.test_no_profile_before_commit) ... ok
+test_proxy_graph_ignores_heldout (test_core.PipelineTests.test_proxy_graph_ignores_heldout) ... ok
+test_snapshot_source_is_training_only (test_core.PipelineTests.test_snapshot_source_is_training_only) ... ok
+test_split (test_core.PipelineTests.test_split) ... ok
+test_stress_available (test_core.PipelineTests.test_stress_available) ... ok
+test_tampered_data_rejected (test_core.PipelineTests.test_tampered_data_rejected) ... ok
+test_temporal_audit (test_core.PipelineTests.test_temporal_audit) ... ok
+test_uncommittable_snapshot_excluded (test_core.PipelineTests.test_uncommittable_snapshot_excluded) ... ok
+test_weighted_profile_embedding (test_core.PipelineTests.test_weighted_profile_embedding) ... ok
+test_wrong_dataset_rejected (test_core.PipelineTests.test_wrong_dataset_rejected) ... ok
+test_wrong_offline_config_rejected (test_core.PipelineTests.test_wrong_offline_config_rejected) ... ok
+{'users': 12, 'items': 18, 'interactions': 780, 'social_edges': 24}
+test_all_three_ground_truth_percentiles (test_coverage.CoverageTests.test_all_three_ground_truth_percentiles) ... ok
+test_cost_accounting_splits_modules_and_cache (test_coverage.CoverageTests.test_cost_accounting_splits_modules_and_cache) ... ok
+test_frontier_uses_computed_points (test_coverage.CoverageTests.test_frontier_uses_computed_points) ... ok
+test_future_interaction_injected_into_evidence_is_rejected (test_coverage.CoverageTests.test_future_interaction_injected_into_evidence_is_rejected) ... ok
+test_random_corruption_repeatability_and_temporal_validity (test_coverage.CoverageTests.test_random_corruption_repeatability_and_temporal_validity) ... ok
+test_entity_fallback_uses_real_extractor_outputs (test_coverage.PaperExportTests.test_entity_fallback_uses_real_extractor_outputs) ... ok
+test_exports_computed_scores_and_seed_status (test_coverage.PaperExportTests.test_exports_computed_scores_and_seed_status) ... ok
+test_research_suite_rejects_fixture_mode (test_coverage.PaperExportTests.test_research_suite_rejects_fixture_mode) ... ok
+test_identical_cached_side_branch_and_backbone_remains_live (test_coverage.ProjectionCacheTests.test_identical_cached_side_branch_and_backbone_remains_live) ... ok
+test_no_cache_during_gradient_training (test_coverage.ProjectionCacheTests.test_no_cache_during_gradient_training) ... ok
+test_duplicate_seeds_rejected (test_external.ExternalTests.test_duplicate_seeds_rejected) ... ok
+test_import_preserves_mock_and_computes_metrics (test_external.ExternalTests.test_import_preserves_mock_and_computes_metrics) ... ok
+test_incomplete_commit_rejected (test_external.ExternalTests.test_incomplete_commit_rejected) ... ok
+test_wrong_target_rejected (test_external.ExternalTests.test_wrong_target_rejected) ... ok
+test_real_api_lora_loss_and_adapter_checkpoint (test_hf_llara.HuggingFaceLLaRATests.test_real_api_lora_loss_and_adapter_checkpoint) ... {'users': 6, 'items': 12, 'interactions': 150, 'social_edges': 12}
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+ok
+{'users': 6, 'items': 12, 'interactions': 150, 'social_edges': 12}
+test_all_models_forward_loss_and_gradient (test_remaining.RemainingTests.test_all_models_forward_loss_and_gradient) ... ok
+test_all_new_models_train_checkpoint_reload_full_catalog (test_remaining.RemainingTests.test_all_new_models_train_checkpoint_reload_full_catalog) ... {'epoch': 1, 'loss': [1.3859275182088215, 1.3859275182088215, 0.0], 'seconds': 0.027914815999793063, 'validation': {'HR@5': 0.5, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.37934752906385016, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [1.3867780981641826, 1.3867780981641826, 0.0], 'seconds': 0.03694048199986355, 'validation': {'HR@5': 0.3333333333333333, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.5548182077776257, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [2.4647548126451895, 2.4647548126451895, 0.0], 'seconds': 0.05275361599979078, 'validation': {'HR@5': 0.6666666666666666, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.46581411453057536, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [1.3872241612636682, 1.3862555749488599, 0.0009686019356277856], 'seconds': 0.010244606000014755, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.7696777823751563, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [1.387638048692183, 1.387638048692183, 0.0], 'seconds': 0.03256864500008305, 'validation': {'HR@5': 0.3333333333333333, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.44102499688908453, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [1.501377076813669, 0.6301301356517908, 0.8712469411618782], 'seconds': 0.017774791000192636, 'validation': {'HR@5': 1.0, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 1.0, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [28.95822201353131, 28.95822201353131, 0.0], 'seconds': 0.12298356999963289, 'validation': {'HR@5': 0.5, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.4685302203216382, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+ok
+test_ari_reports_computed_value (test_remaining.RemainingTests.test_ari_reports_computed_value) ... ok
+test_bert_masked_training_does_not_access_holdouts (test_remaining.RemainingTests.test_bert_masked_training_does_not_access_holdouts) ... ok
+test_frozen_semantic_provenance_cannot_change_on_restore (test_remaining.RemainingTests.test_frozen_semantic_provenance_cannot_change_on_restore) ... ok
+test_generative_rlm_reconstruction_gradients (test_remaining.RemainingTests.test_generative_rlm_reconstruction_gradients) ... ok
+test_llara_base_frozen_and_adapter_projector_trainable (test_remaining.RemainingTests.test_llara_base_frozen_and_adapter_projector_trainable) ... ok
+test_llara_curriculum (test_remaining.RemainingTests.test_llara_curriculum) ... ok
+test_normalized_graph_equation (test_remaining.RemainingTests.test_normalized_graph_equation) ... ok
+test_sampling_reproducible (test_remaining.RemainingTests.test_sampling_reproducible) ... ok
+test_separate_projection_has_own_gradient (test_remaining.RemainingTests.test_separate_projection_has_own_gradient) ... ok
+test_static_profiles_count_all_training_events (test_remaining.RemainingTests.test_static_profiles_count_all_training_events) ... ok
+test_bpr_and_baselines_train (test_training.TrainingTests.test_bpr_and_baselines_train) ... {'users': 12, 'items': 18, 'interactions': 480, 'social_edges': 24}
+{'epoch': 1, 'loss': [0.7713877209671983, 0.6756975666896717, 1.9138029803026904], 'seconds': 0.22003838499995254, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8573472446952884, 'rho': 0.6481957584619522, 'gamma': 0.4870392332474391, 'gate': 0.4931789388259252}}
+{'epoch': 1, 'loss': [1.3441930010512069, 1.3441930010512069, 0.0], 'seconds': 0.20481831899996905, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.7643764353670743, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+{'epoch': 1, 'loss': [1.361723178141826, 1.361723178141826, 0.0], 'seconds': 0.18291763399975025, 'validation': {'HR@5': 0.9166666666666666, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.6506456455419977, 'rho': 0.0, 'gamma': 0.0, 'gate': 0.0}}
+ok
+test_mock_guard (test_training.TrainingTests.test_mock_guard) ... {'users': 12, 'items': 18, 'interactions': 480, 'social_edges': 24}
+ok
+test_resume_matches_uninterrupted_training (test_training.TrainingTests.test_resume_matches_uninterrupted_training) ... {'users': 12, 'items': 18, 'interactions': 480, 'social_edges': 24}
+{'epoch': 1, 'loss': [1.46435196013064, 1.3687061017697997, 1.912917176882426], 'seconds': 0.2121668800000407, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8573472446952884, 'rho': 0.6481671035289764, 'gamma': 0.4869231308499972, 'gate': 0.4931001563866933}}
+{'epoch': 2, 'loss': [1.3726094810812324, 1.322894081339106, 0.9943081994314451], 'seconds': 0.2014807010000368, 'validation': {'HR@5': 1.0, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8045540639881074, 'rho': 0.6524068713188171, 'gamma': 0.4742678379019101, 'gate': 0.48192761341730755}}
+{'epoch': 1, 'loss': [1.46435196013064, 1.3687061017697997, 1.912917176882426], 'seconds': 0.20770261699999537, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8573472446952884, 'rho': 0.6481671035289764, 'gamma': 0.4869231308499972, 'gate': 0.4931001563866933}}
+{'epoch': 2, 'loss': [1.3726094810812324, 1.322894081339106, 0.9943081994314451], 'seconds': 0.1915418779999527, 'validation': {'HR@5': 1.0, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8045540639881074, 'rho': 0.6524068713188171, 'gamma': 0.4742678379019101, 'gate': 0.48192761341730755}}
+ok
+test_missing_results_never_pass (test_verification_suite.VerificationTests.test_missing_results_never_pass) ... ok
+test_mock_even_matching_reference_never_passes (test_verification_suite.VerificationTests.test_mock_even_matching_reference_never_passes) ... ok
+test_search_does_not_evaluate_test (test_verification_suite.VerificationTests.test_search_does_not_evaluate_test) ... {'users': 6, 'items': 12, 'interactions': 150, 'social_edges': 12}
+{'epoch': 1, 'loss': [1.4550986073233865, 1.3741633277950864, 1.6187052907365742], 'seconds': 0.052456395000263, 'validation': {'HR@5': 0.8333333333333334, 'HR@10': 1.0, 'HR@20': 1.0, 'NDCG@10': 0.8093678645180038, 'rho': 0.6550388932228088, 'gamma': 0.494388222694397, 'gate': 0.5273499488830566}}
+ok
+test_suite_unknown_variant_rejected (test_verification_suite.VerificationTests.test_suite_unknown_variant_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 78 tests in 5.469s
+
+OK

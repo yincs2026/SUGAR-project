@@ -1,0 +1,4 @@
+# Separate server environment: vLLM 0.5.5 requires its own torch (not online torch 2.3).
+vllm==0.5.5
+transformers==4.45.2
+PyYAML==6.0.2
